@@ -112,7 +112,7 @@ export default function Home() {
               <span className="arrow">↳</span>
               <div className="experience-content">
                 <div className="experience-header">
-                  <strong>software engineering intern @ kal polymers <a href="https://your-video-link.com" className="video-link" title="watch video" target="_blank" rel="noopener noreferrer">
+                  <strong>software engineering intern @ kal polymers <a href="https://youtu.be/LNl4Tad1_N0" className="video-link" title="watch video" target="_blank" rel="noopener noreferrer">
                       <FaYoutube size={16} />
                     </a></strong>
                   <div className="header-right">
@@ -127,7 +127,7 @@ export default function Home() {
               <div className="experience-content">
                 <div className="experience-header">
                   <strong>full stack developer @ startup</strong>
-                  <span className="duration">Dec '24 → Apr '25</span>
+                  <span className="duration">dec '24 → apr '25</span>
                 </div>
                 <p className="job-description">built responsive web applications using react and node.js, delivering scalable solutions for client projects.</p>
               </div>
@@ -137,7 +137,7 @@ export default function Home() {
               <div className="experience-content">
                 <div className="experience-header">
                   <strong>ai research intern @ algoverse </strong>
-                  <span className="duration">Oct '24 → May '25</span>
+                  <span className="duration">oct '24 → may '25</span>
                 </div>
                 <p className="job-description">conducted research on machine learning algorithms and contributed to natural language processing projects.</p>
               </div>
