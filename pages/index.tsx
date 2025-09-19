@@ -119,7 +119,7 @@ export default function Home() {
                     <span className="duration">may → aug '25</span>
                   </div>
                 </div>
-                <p className="job-description">developed production optimization software that improved machine efficiency by 45% and first-pass yield by 30%.</p>
+                <p className="job-description">developed production optimization software that improved machine efficiency by 45% and first-pass yield by 30%</p>
               </div>
             </li>
             <li>
