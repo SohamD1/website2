@@ -61,7 +61,7 @@ export default function Home() {
               <div className="highlight-content">
                 <a href="https://devpost.com/software/stockoverflowasp" target="_blank" rel="noopener noreferrer">
                   <strong>stockoverflow</strong>
-                </a> — dual-platform finance app with AI advising, real-time trading, and gamified learning.
+                </a> — dual-platform finance app with AI advising, real-time trading, and gamified learning
                 <span className="achievement">hackathon • fintech</span>
               </div>
             </li>
@@ -129,7 +129,7 @@ export default function Home() {
                   <strong>full stack developer @ startup</strong>
                   <span className="duration">dec '24 → apr '25</span>
                 </div>
-                <p className="job-description">built responsive web applications using react and node.js, delivering scalable solutions for client projects.</p>
+                <p className="job-description">built responsive web applications using react and node.js, delivering scalable solutions for client projects</p>
               </div>
             </li>
             <li>
@@ -139,7 +139,7 @@ export default function Home() {
                   <strong>ai research intern @ algoverse </strong>
                   <span className="duration">oct '24 → may '25</span>
                 </div>
-                <p className="job-description">conducted research on machine learning algorithms and contributed to natural language processing projects.</p>
+                <p className="job-description">conducted research on machine learning algorithms and contributed to natural language processing projects</p>
               </div>
             </li>
           </ul>
