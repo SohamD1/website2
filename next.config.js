@@ -2,11 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
-
-module.exports = nextConfig
-
-module.exports = {
-  output: 'export',
+  output: 'export', // enables static HTML export
   // optional: trailingSlash: true,
 };
+
+module.exports = nextConfig;
