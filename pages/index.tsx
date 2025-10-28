@@ -112,9 +112,7 @@ export default function Home() {
               <span className="arrow">↳</span>
               <div className="experience-content">
                 <div className="experience-header">
-                  <strong>software engineering intern @ kal polymers <a href="https://youtu.be/LNl4Tad1_N0" className="video-link" title="watch video" target="_blank" rel="noopener noreferrer">
-                      <FaYoutube size={16} />
-                    </a></strong>
+                  <strong>software engineering intern @ kal polymers</strong>
                   <div className="header-right">
                     <span className="duration">may → aug '25</span>
                   </div>
