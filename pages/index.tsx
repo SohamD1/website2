@@ -96,11 +96,18 @@ export default function Home() {
         </section>
 
         <section className="education">
-          <h2><em>education:</em></h2>
+          <h2><em>education or events:</em></h2>
           <ul className="education-list">
             <li>
               <span className="diamond">◆</span>
               <strong>management engineering</strong> @ university of waterloo
+            </li>
+            <li>
+              <span className="diamond">◆</span>
+              <div className="event-content">
+                <strong>y combinator's ai startup school</strong>
+                <span className="achievement">met cool people</span>
+              </div>
             </li>
           </ul>
         </section>
