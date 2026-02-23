@@ -32,7 +32,7 @@ export default function Home() {
     <>
       <Head>
         <title>Soham Dave</title>
-        <meta name="description" content="Management Engineering @ UWaterloo" />
+        <meta name="description" content="Engineering @ UWaterloo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -100,7 +100,7 @@ export default function Home() {
           <ul className="education-list">
             <li>
               <span className="diamond">◆</span>
-              <strong>management engineering</strong> @ university of waterloo
+              <strong>engineering + ai</strong> @ university of waterloo
             </li>
             <li>
               <span className="diamond">◆</span>
