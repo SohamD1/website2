@@ -1,12 +1,25 @@
 import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 
-interface Command {
+type Command = {
   id: string
   icon: string
   text: string
-  shortcut?: string
   action: () => void
+}
+
+const copy = {
+  inputPlaceholder: 'Type a command...',
+  closeHint: 'Press Escape to close',
+  emptyResults: 'No commands found',
+  commands: {
+    home: 'Go to Home',
+    projects: 'View Projects',
+    x: 'View X',
+    github: 'View GitHub',
+    linkedin: 'View LinkedIn',
+    resume: 'Download Resume',
+  },
 }
 
 const CommandPalette = () => {
@@ -19,49 +32,41 @@ const CommandPalette = () => {
   const commands: Command[] = [
     {
       id: 'home',
-      icon: '🏠',
-      text: 'Go to Home',
-      action: () => router.push('/')
+      icon: 'H',
+      text: copy.commands.home,
+      action: () => router.push('/'),
     },
     {
       id: 'projects',
-      icon: '🚀',
-      text: 'View Projects',
-      action: () => router.push('/projects')
+      icon: 'P',
+      text: copy.commands.projects,
+      action: () => router.push('/projects'),
     },
-    {
-      id: 'email',
-      icon: '✉️',
-      text: 'Send Email',
-      action: () => window.location.href = 'mailto:your.email@waterloo.ca'
-    },
+    { id: 'x', icon: 'X', text: copy.commands.x, action: () => window.open('https://x.com/_sohamdave', '_blank') },
     {
       id: 'github',
-      icon: '🐙',
-      text: 'View GitHub',
-      action: () => window.open('https://github.com/yourusername', '_blank')
+      icon: 'G',
+      text: copy.commands.github,
+      action: () => window.open('https://github.com/SohamD1', '_blank'),
     },
     {
       id: 'linkedin',
-      icon: '💼',
-      text: 'View LinkedIn',
-      action: () => window.open('https://linkedin.com/in/yourusername', '_blank')
+      icon: 'L',
+      text: copy.commands.linkedin,
+      action: () => window.open('https://linkedin.com/in/sohamdave1', '_blank'),
     },
     {
       id: 'resume',
-      icon: '📄',
-      text: 'Download Resume',
-      action: () => window.open('/resume.pdf', '_blank')
-    }
+      icon: 'R',
+      text: copy.commands.resume,
+      action: () => window.open('/resume.pdf', '_blank'),
+    },
   ]
 
-  const filteredCommands = commands.filter(command =>
-    command.text.toLowerCase().includes(query.toLowerCase())
-  )
+  const filteredCommands = commands.filter((command) => command.text.toLowerCase().includes(query.toLowerCase()))
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Ctrl+K or Cmd+K to open command palette
       if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault()
         setIsOpen(true)
@@ -70,8 +75,6 @@ const CommandPalette = () => {
         return
       }
 
-
-      // Handle command palette navigation when open
       if (isOpen) {
         switch (e.key) {
           case 'Escape':
@@ -128,10 +131,10 @@ const CommandPalette = () => {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Type a command..."
+            placeholder={copy.inputPlaceholder}
             autoComplete="off"
           />
-          <span className="command-hint">Press Escape to close</span>
+          <span className="command-hint">{copy.closeHint}</span>
         </div>
         <div className="command-palette-results">
           {filteredCommands.map((command, index) => (
@@ -142,15 +145,12 @@ const CommandPalette = () => {
             >
               <span className="command-icon">{command.icon}</span>
               <span className="command-text">{command.text}</span>
-              {command.shortcut && (
-                <span className="command-shortcut">{command.shortcut}</span>
-              )}
             </div>
           ))}
           {filteredCommands.length === 0 && (
             <div className="command-item">
-              <span className="command-icon">🔍</span>
-              <span className="command-text">No commands found</span>
+              <span className="command-icon">?</span>
+              <span className="command-text">{copy.emptyResults}</span>
             </div>
           )}
         </div>
