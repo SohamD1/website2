@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import Head from 'next/head'
+import Image from 'next/image'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 import LiquidBackground from '@/components/LiquidBackground'
@@ -80,16 +80,6 @@ const copy = {
 }
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
   return (
     <>
       <Head>
@@ -97,9 +87,6 @@ export default function Home() {
         <meta name="description" content={copy.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
       </Head>
 
       <LiquidBackground />
@@ -111,7 +98,7 @@ export default function Home() {
             <h1>{copy.profile.name}</h1>
           </div>
           <div className="intro-image">
-            <img src="/profile.jpg" alt={copy.profile.imageAlt} />
+            <Image src="/profile.jpg" alt={copy.profile.imageAlt} width={80} height={80} priority unoptimized />
           </div>
         </header>
 
