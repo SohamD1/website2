@@ -56,10 +56,15 @@ const CommandPalette = () => {
   )
 
   const filteredCommandsRef = useRef(filteredCommands)
-  filteredCommandsRef.current = filteredCommands
-
   const selectedIndexRef = useRef(selectedIndex)
-  selectedIndexRef.current = selectedIndex
+
+  useEffect(() => {
+    filteredCommandsRef.current = filteredCommands
+  }, [filteredCommands])
+
+  useEffect(() => {
+    selectedIndexRef.current = selectedIndex
+  }, [selectedIndex])
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
