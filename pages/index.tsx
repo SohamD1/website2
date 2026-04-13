@@ -87,6 +87,22 @@ export default function Home() {
         <meta name="description" content={copy.meta.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="canonical" href="https://davesoham.com" />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://davesoham.com" />
+        <meta property="og:title" content={copy.meta.title} />
+        <meta property="og:description" content={copy.meta.description} />
+        <meta property="og:image" content="https://davesoham.com/profile.jpg" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@_sohamdave" />
+        <meta name="twitter:title" content={copy.meta.title} />
+        <meta name="twitter:description" content={copy.meta.description} />
+        <meta name="twitter:image" content="https://davesoham.com/profile.jpg" />
       </Head>
 
       <LiquidBackground />
@@ -176,13 +192,13 @@ export default function Home() {
 
         <footer className="contact">
           <div className="links">
-            <a href="https://x.com/_sohamdave" className="contact-link" title={copy.contact.xTitle} target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/_sohamdave" className="contact-link" title={copy.contact.xTitle} aria-label={copy.contact.xTitle} target="_blank" rel="noopener noreferrer">
               <FaXTwitter size={24} />
             </a>
-            <a href="https://github.com/SohamD1" className="contact-link" title={copy.contact.githubTitle} target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/SohamD1" className="contact-link" title={copy.contact.githubTitle} aria-label={copy.contact.githubTitle} target="_blank" rel="noopener noreferrer">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/in/sohamdave1" className="contact-link" title={copy.contact.linkedInTitle} target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/sohamdave1" className="contact-link" title={copy.contact.linkedInTitle} aria-label={copy.contact.linkedInTitle} target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} />
             </a>
           </div>

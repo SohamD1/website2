@@ -49,6 +49,17 @@ body {
   opacity: 0.95;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -59,6 +70,7 @@ body {
   gap: var(--spacing-sm);
   position: relative;
   z-index: 1;
+  animation: fadeInUp 0.6s ease both;
 }
 
 h1 {
@@ -78,11 +90,6 @@ h2 {
 
 section {
   margin-bottom: var(--spacing-xs);
-  transition: transform 0.2s ease;
-}
-
-section:hover {
-  transform: scale(1.02);
 }
 
 .intro {
