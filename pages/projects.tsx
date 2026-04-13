@@ -3,11 +3,11 @@ import { projects } from '@/lib/site-content'
 
 export default function ProjectsPage() {
   return (
-    <SiteLayout currentPath="/projects" pageTitle="Projects" description="Selected projects, research, and product work by Soham Dave.">
+    <SiteLayout currentPath="/projects" pageTitle="projects" description="selected projects, research, and product work by soham dave.">
       <section className="section-block">
-        <h1 className="page-title">Projects</h1>
+        <h1 className="page-title">projects</h1>
         <p className="page-intro">
-          A few of the strongest builds from my GitHub across browser tools, applied AI, developer systems, and product experiments.
+          a selection of builds from my github across browser tools, applied ai, developer systems, and product experiments.
         </p>
       </section>
 

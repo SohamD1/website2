@@ -5,13 +5,13 @@ export default function ExperiencePage() {
   return (
     <SiteLayout
       currentPath="/experience"
-      pageTitle="Experience"
-      description="Experience across agentic systems, optimization, and mechanistic interpretability."
+      pageTitle="experience"
+      description="experience across agentic systems, optimization, and mechanistic interpretability."
     >
       <section className="section-block">
-        <h1 className="page-title">Experience</h1>
+        <h1 className="page-title">experience</h1>
         <p className="page-intro">
-          My recent work has lived at the intersection of engineering craft, applied AI, and research-driven product thinking.
+          my recent work has lived at the intersection of engineering craft, applied ai, and research-driven product thinking.
         </p>
       </section>
 
@@ -41,11 +41,10 @@ export default function ExperiencePage() {
       </section>
 
       <section className="section-block contact-block">
-        <h2>Elsewhere</h2>
         <p>
-          Reach out on <a href={contact.x} target="_blank" rel="noopener noreferrer">X</a>, browse code on{' '}
-          <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub</a>, or connect on{' '}
-          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+          reach out on <a href={contact.x} target="_blank" rel="noopener noreferrer">x</a>, browse code on{' '}
+          <a href={contact.github} target="_blank" rel="noopener noreferrer">github</a>, or connect on{' '}
+          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">linkedin</a>.
         </p>
       </section>
     </SiteLayout>
