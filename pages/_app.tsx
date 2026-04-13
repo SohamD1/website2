@@ -1,18 +1,19 @@
 import type { AppProps } from 'next/app'
-import { Inter } from 'next/font/google'
+import { Lora } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import '@/styles/globals.css'
 
-const inter = Inter({
+const lora = Lora({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['200', '300', '400', '500', '600'],
-  variable: '--font-inter',
+  style: ['normal', 'italic'],
+  weight: ['400', '500', '600'],
+  variable: '--font-serif',
 })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={inter.variable}>
+    <div className={lora.variable}>
       <Component {...pageProps} />
       <Analytics />
     </div>
