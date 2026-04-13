@@ -34,6 +34,7 @@ body {
   line-height: 1.75;
   letter-spacing: 0.01em;
   text-rendering: geometricPrecision;
+  text-transform: lowercase;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
@@ -148,6 +149,10 @@ nav {
   letter-spacing: -0.025em;
 }
 
+.name-display {
+  text-transform: none;
+}
+
 .intro-block p + p,
 .contact-block p + p {
   margin-top: var(--space-copy);
@@ -179,10 +184,6 @@ nav {
   max-width: 36rem;
 }
 
-.aside-block {
-  padding-bottom: 2rem;
-}
-
 .entry {
   display: grid;
   grid-template-columns: minmax(0, 8rem) minmax(0, 1fr);
@@ -211,7 +212,8 @@ nav {
 }
 
 .contact-block {
-  padding-bottom: 2rem;
+  margin-top: 1.25rem;
+  padding-bottom: 0.75rem;
 }
 
 ::selection {
