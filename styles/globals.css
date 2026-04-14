@@ -1,11 +1,12 @@
 :root {
-  --background: #fcfcfc;
-  --text: #4a515b;
-  --text-strong: #1e2125;
-  --text-muted: #8c95a1;
-  --border: rgba(216, 219, 223, 0.7);
-  --selection-bg: rgba(149, 165, 172, 0.25);
-  --selection-text: #485a74;
+  --background: #fafaf9;
+  --text: #4a4f57;
+  --text-strong: #111318;
+  --text-muted: #8c919a;
+  --accent: #3d5a80;
+  --border: rgba(200, 204, 210, 0.5);
+  --selection-bg: rgba(61, 90, 128, 0.14);
+  --selection-text: #2c3e50;
   --content-width: 44rem;
   --nav-width: 5rem;
   --frame-min-height: 30rem;
@@ -30,13 +31,24 @@ body {
   min-height: 100vh;
   background: var(--background);
   color: var(--text);
-  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.01em;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Font stacks — scoped inside .site-shell so CSS vars from next/font are available */
+.site-shell {
+  font-family: var(--font-sans), 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3,
+em, nav {
+  font-family: var(--font-serif), 'Lora', Georgia, serif;
+  font-style: normal;
+  letter-spacing: -0.01em;
 }
 
 a {
@@ -50,8 +62,8 @@ a {
 }
 
 a:hover {
-  color: var(--text-strong);
-  text-decoration-color: var(--text-strong);
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 p,
@@ -75,13 +87,6 @@ h3 {
 ul {
   padding: 0;
   list-style: none;
-}
-
-em,
-nav {
-  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
-  font-style: normal;
-  letter-spacing: -0.01em;
 }
 
 .site-shell {
@@ -151,9 +156,9 @@ nav {
 
 .intro-block h1 {
   margin-bottom: 0.3rem;
-  color: #3b4149;
+  color: var(--text-strong);
   font-size: 1.5rem;
-  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif), 'Lora', Georgia, serif;
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.15;
@@ -256,9 +261,9 @@ nav {
 
 .page-title {
   margin-bottom: 0.3rem;
-  color: #3b4149;
+  color: var(--text-strong);
   font-size: 1.5rem;
-  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif), 'Lora', Georgia, serif;
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.15;

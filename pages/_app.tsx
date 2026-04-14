@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import { Lora } from 'next/font/google'
+import { Lora, Inter } from 'next/font/google'
 import '@/styles/globals.css'
 
 const lora = Lora({
@@ -10,9 +10,16 @@ const lora = Lora({
   variable: '--font-serif',
 })
 
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500'],
+  variable: '--font-sans',
+})
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={lora.variable}>
+    <div className={`${lora.variable} ${inter.variable}`}>
       <Component {...pageProps} />
     </div>
   )
