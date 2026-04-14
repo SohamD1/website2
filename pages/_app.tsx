@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app'
 import { Lora } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import '@/styles/globals.css'
 
 const lora = Lora({
@@ -15,7 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={lora.variable}>
       <Component {...pageProps} />
-      <Analytics />
     </div>
   )
 }
