@@ -16,25 +16,21 @@ export default function ExperiencePage() {
       </section>
 
       <section className="section-block">
-        <ul className="entry-list" aria-label="Experience">
+        <ul className="entry-list project-list" aria-label="Experience">
           {experience.map((item) => (
-            <li key={`${item.title}-${item.company}`} className="entry">
-              <div className="entry-meta">
-                <span>{item.duration}</span>
-              </div>
-              <div className="entry-content">
-                <h3>
-                  {item.title}{' '}
-                  {item.companyUrl ? (
-                    <a href={item.companyUrl} target="_blank" rel="noopener noreferrer">
-                      @ {item.company}
-                    </a>
-                  ) : (
-                    <span>@ {item.company}</span>
-                  )}
-                </h3>
-                <p>{item.description}</p>
-              </div>
+            <li key={`${item.title}-${item.company}`} className="project-entry">
+              <span className="project-year">{item.duration}</span>
+              <h3 className="project-title">{item.title}</h3>
+              <span className="project-note">
+                {item.companyUrl ? (
+                  <a href={item.companyUrl} target="_blank" rel="noopener noreferrer">
+                    {item.company}
+                  </a>
+                ) : (
+                  <span>{item.company}</span>
+                )}
+              </span>
+              <p className="project-description">{item.description}</p>
             </li>
           ))}
         </ul>

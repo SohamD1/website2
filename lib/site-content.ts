@@ -14,9 +14,12 @@ export const intro = {
   name: 'Soham Dave',
   role: 'I build product-minded AI systems with a bias for elegant interfaces, fast iteration, and research that turns into usable software.',
   paragraphs: [
-    "I'm studying engineering & ai at the University of Waterloo, and currently working on agentic systems at Friedmann AI.",
-    'My recent work spans distributed systems, mechanistic interpretability, browser tooling, and product-minded software experiments.',
-    'This site is a compact snapshot of the work I care about most right now: building thoughtful software, shipping experimental ideas quickly, and staying close to both the technical and human sides of product development.',
+    "I'm studying engineering and AI at the University of Waterloo, and currently working on agentic systems at Friedmann AI.",
+    'I built my first game on Scratch in grade 6, and I still think about software in a pretty similar way. Make something playful. Make it work. Keep rebuilding it until it feels right.',
+    "Since then, I've mostly been drawn to the kind of engineering that gives time back. In university, that has meant automating busy work like iClicker and building small systems that make everyday workflows less annoying.",
+    'The surface area changes. Sometimes it is distributed systems. Sometimes it is mechanistic interpretability. Sometimes it is browser tooling. The throughline stays the same. Take something messy, make it clear, and turn it into software people can actually use.',
+    "I'm also always reading papers and implementation writeups with the same question in mind. What does it take to make this real? The part I like most is closing the gap between a good idea on paper and something you can actually ship.",
+    'This site is a snapshot of the work I care about right now. Thoughtful software. Fast experiments. Research that earns its way into real products.',
   ],
 }
 
@@ -61,14 +64,14 @@ export const experience = [
   },
   {
     title: 'Engineering',
-    company: 'KAL Polymers',
-    duration: "May 2025 - Aug 2025",
+    company: 'Kal Polymers',
+    duration: "2025",
     description: 'Worked on throughput optimization and practical systems improvement.',
   },
   {
-    title: 'Mechanistic interpretability',
+    title: 'Research Engineer',
     company: 'Algoverse',
-    duration: "Oct 2024 - May 2025",
+    duration: "2025",
     description: 'Focused on tracing, model internals, and interpretability workflows.',
   },
 ]

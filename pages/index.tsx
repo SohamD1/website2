@@ -16,8 +16,11 @@ export default function Home() {
           .
         </p>
         <p>{intro.paragraphs[1]}</p>
+        <p>{intro.paragraphs[2]}</p>
+        <p>{intro.paragraphs[3]}</p>
+        <p>{intro.paragraphs[4]}</p>
         <p>
-          {intro.paragraphs[2]} You can find me on <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub</a>,{' '}
+          {intro.paragraphs[5]} You can find me on <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub</a>,{' '}
           <a href={contact.x} target="_blank" rel="noopener noreferrer">
             X
           </a>
