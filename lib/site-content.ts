@@ -14,7 +14,7 @@ export const intro = {
   name: 'Soham Dave',
   role: 'I build product-minded AI systems with a bias for elegant interfaces, fast iteration, and research that turns into usable software.',
   paragraphs: [
-    "I'm studying engineering & AI at the University of Waterloo, and currently working on agentic systems at Friedmann AI.",
+    "I'm studying engineering & ai at the University of Waterloo, and currently working on agentic systems at Friedmann AI.",
     'My recent work spans distributed systems, mechanistic interpretability, browser tooling, and product-minded software experiments.',
     'This site is a compact snapshot of the work I care about most right now: building thoughtful software, shipping experimental ideas quickly, and staying close to both the technical and human sides of product development.',
   ],
