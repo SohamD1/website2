@@ -8,14 +8,14 @@ type Command = {
 }
 
 const copy = {
-  inputPlaceholder: 'type a command...',
-  closeHint: 'press escape to close',
-  emptyResults: 'no commands found',
+  inputPlaceholder: 'Type a command...',
+  closeHint: 'Press Escape to close',
+  emptyResults: 'No commands found',
   commands: {
-    home: 'go to home',
-    x: 'view x',
-    github: 'view github',
-    linkedin: 'view linkedin',
+    home: 'Go to Home',
+    x: 'View X',
+    github: 'View GitHub',
+    linkedin: 'View LinkedIn',
   },
 }
 

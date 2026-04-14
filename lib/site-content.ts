@@ -1,75 +1,75 @@
 export const siteMeta = {
   title: 'Soham Dave',
-  description: 'engineering @ uwaterloo',
+  description: 'Engineering @ UWaterloo',
   baseUrl: 'https://davesoham.com',
 }
 
 export const navItems = [
-  { href: '/', label: 'about' },
-  { href: '/projects', label: 'projects' },
-  { href: '/experience', label: 'experience' },
+  { href: '/', label: 'About' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/experience', label: 'Experience' },
 ]
 
 export const intro = {
   name: 'Soham Dave',
-  role: 'i build product-minded ai systems with a bias for elegant interfaces, fast iteration, and research that turns into usable software.',
+  role: 'I build product-minded AI systems with a bias for elegant interfaces, fast iteration, and research that turns into usable software.',
   paragraphs: [
-    "i'm studying engineering & ai at the university of waterloo, and currently working on agentic systems at friedmann ai.",
-    'my recent work spans mechanistic interpretability, browser tooling, real-time music learning, and applied automation.',
-    'this site is a compact snapshot of the work i care about most right now: building thoughtful software, shipping experimental ideas quickly, and staying close to both the technical and human sides of product development.',
+    "I'm studying engineering & AI at the University of Waterloo, and currently working on agentic systems at Friedmann AI.",
+    'My recent work spans distributed systems, mechanistic interpretability, browser tooling, and product-minded software experiments.',
+    'This site is a compact snapshot of the work I care about most right now: building thoughtful software, shipping experimental ideas quickly, and staying close to both the technical and human sides of product development.',
   ],
 }
 
 export const projects = [
   {
-    name: 'rustvault',
+    name: 'RustVault',
     url: 'https://github.com/SohamD1/RustVault',
-    description: 'a mini dynamodb-inspired key-value store with a rust lsm-tree engine, java api layer, consistent hashing, and replica failover across three nodes.',
-    note: 'distributed systems',
+    description: 'A mini DynamoDB-inspired key-value store with a Rust LSM-tree engine, Java API layer, consistent hashing, and replica failover across three nodes.',
+    note: 'dist. systems',
     year: '2026',
   },
   {
-    name: 'semantic convergence',
+    name: 'Semantic Convergence',
     url: 'https://arxiv.org/abs/2507.22918',
-    description: 'a research paper on shared representations across scaled gemma-2 models, using sparse autoencoders to study how interpretable features align across model sizes.',
-    note: 'mechanistic interpretability',
+    description: 'A research paper on shared representations across scaled Gemma-2 models, using sparse autoencoders to study how interpretable features align across model sizes.',
+    note: 'mech. interp.',
     year: '2025',
   },
   {
-    name: 'fomo calculator',
+    name: 'FOMO Calculator',
     url: 'https://github.com/SohamD1/finance_fomo',
-    description: 'a stock-return simulator that shows what an investment would be worth from a chosen date, built with a rails api, react frontend, and yahoo finance data.',
-    note: 'rails + react',
+    description: 'A stock-return simulator that shows what an investment would be worth from a chosen date, built with a Rails API, React frontend, and Yahoo Finance data.',
+    note: 'finance app',
     year: '2025',
   },
   {
-    name: 'tabhive',
+    name: 'TabHive',
     url: 'https://github.com/SohamD1/TabHive',
-    description: 'a privacy-first browser extension that clusters similar tabs locally, detects course patterns, and helps clean up overloaded browsing sessions.',
-    note: 'browser extension',
+    description: 'A privacy-first browser extension that clusters similar tabs locally, detects course patterns, and helps clean up overloaded browsing sessions.',
+    note: 'browser tool',
     year: '2025',
   },
 ]
 
 export const experience = [
   {
-    title: 'engineering',
-    company: 'friedmann ai',
+    title: 'Engineering',
+    company: 'Friedmann AI',
     companyUrl: 'https://www.friedmann.ai/',
-    duration: 'present',
-    description: 'building agentic systems and product-facing ai workflows.',
+    duration: 'Present',
+    description: 'Building agentic systems and product-facing AI workflows.',
   },
   {
-    title: 'engineering',
-    company: 'kal polymers',
-    duration: "may 2025 - aug 2025",
-    description: 'worked on throughput optimization and practical systems improvement.',
+    title: 'Engineering',
+    company: 'KAL Polymers',
+    duration: "May 2025 - Aug 2025",
+    description: 'Worked on throughput optimization and practical systems improvement.',
   },
   {
-    title: 'mechanistic interpretability',
-    company: 'algoverse',
-    duration: "oct 2024 - may 2025",
-    description: 'focused on tracing, model internals, and interpretability workflows.',
+    title: 'Mechanistic interpretability',
+    company: 'Algoverse',
+    duration: "Oct 2024 - May 2025",
+    description: 'Focused on tracing, model internals, and interpretability workflows.',
   },
 ]
 
