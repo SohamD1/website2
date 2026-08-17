@@ -1,32 +1,62 @@
-import SiteLayout from '@/components/SiteLayout'
-import { contact, intro } from '@/lib/site-content'
+import Head from 'next/head'
+import AsciiParticles from '@/components/AsciiParticles'
+
+type LinkRefProps = {
+  href: string
+  icon: string
+  children: React.ReactNode
+}
+
+/* favicon sits outside the anchor so the underline stays under the text */
+function LinkRef({ href, icon, children }: LinkRefProps) {
+  return (
+    <span className="linkref">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img className="favicon" src={icon} alt="" aria-hidden="true" />
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {children}
+      </a>
+    </span>
+  )
+}
 
 export default function Home() {
   return (
-    <SiteLayout currentPath="/" description={intro.role}>
-      <section className="section-block intro-block">
-        <h1>{intro.name}</h1>
-        <p>{intro.role}</p>
-        <p>
-          I&apos;m studying engineering and AI at the <a href="https://uwaterloo.ca/" target="_blank" rel="noopener noreferrer">University
-          of Waterloo</a>, and currently working on agentic systems at{' '}
-          <a href="https://www.friedmann.ai/" target="_blank" rel="noopener noreferrer">
-            Friedmann AI
-          </a>
-          .
-        </p>
-        <p>{intro.paragraphs[1]}</p>
-        <p>{intro.paragraphs[2]}</p>
-        <p>{intro.paragraphs[3]}</p>
-        <p>{intro.paragraphs[4]}</p>
-        <p>
-          {intro.paragraphs[5]} You can find me on <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub</a>,{' '}
-          <a href={contact.x} target="_blank" rel="noopener noreferrer">
-            X
-          </a>
-          , and <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
-        </p>
-      </section>
-    </SiteLayout>
+    <>
+      <Head>
+        <title>Soham Dave</title>
+        <meta name="description" content="Engineering @ UWaterloo" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <AsciiParticles />
+      <div className="overlay">
+        <div className="content">
+          <h1>Soham Dave</h1>
+          <p>
+            I&apos;m an engineering student at Waterloo. From January to August
+            I was at{' '}
+            <LinkRef href="https://www.friedmann.ai/" icon="/icons/friedmann.svg">
+              Friedmann AI
+            </LinkRef>
+            , building agentic systems for financial advisors. This fall
+            I&apos;m joining{' '}
+            <LinkRef href="https://www.finta.com/" icon="/icons/finta.svg">
+              Finta
+            </LinkRef>
+            , which automates bookkeeping and taxes for startups. Before that I
+            wrote{' '}
+            <LinkRef
+              href="https://arxiv.org/abs/2507.22918"
+              icon="/icons/acl.ico"
+            >
+              Semantic Convergence
+            </LinkRef>{' '}
+            (ACL 2025), a paper on how features line up across model sizes. I
+            care most about the gap between ML research and ML that actually
+            runs in production. Finance is where that gap costs the most.
+          </p>
+        </div>
+      </div>
+    </>
   )
 }
