@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import Head from 'next/head'
 import AsciiParticles from '@/components/AsciiParticles'
 
@@ -21,6 +22,10 @@ function LinkRef({ href, icon, children }: LinkRefProps) {
 }
 
 export default function Home() {
+  // the canvas keeps the spinning mark clear of this block, so it needs to
+  // measure where the text actually ends
+  const contentRef = useRef<HTMLDivElement>(null)
+
   return (
     <>
       <Head>
@@ -28,9 +33,9 @@ export default function Home() {
         <meta name="description" content="Engineering @ UWaterloo" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <AsciiParticles />
+      <AsciiParticles contentRef={contentRef} />
       <div className="overlay">
-        <div className="content">
+        <div className="content" ref={contentRef}>
           <h1>Soham Dave</h1>
           <p>
             I&apos;m an engineering student at Waterloo. From January to August
